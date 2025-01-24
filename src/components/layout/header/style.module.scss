@@ -1,0 +1,22 @@
+.menuBtn {
+  position: fixed;
+  right: 30px;
+  top: 30px;
+  color: var(--bone);
+  z-index: 10;
+  .menu {
+    width: 30vw;
+    height: 95vh;
+    background-color: var(--iceblue);
+    border-radius: 25px;
+    position: relative;
+    z-index: 10;
+  }
+}
+
+.header {
+  position: fixed;
+  left: 30px;
+  top: 30px;
+  z-index: 10;
+}
