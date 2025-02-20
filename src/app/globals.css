@@ -1,21 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playwrite+VN:wght@100..400&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #f0f0f0;
+  --foreground: #739bd0;
+  --calmblue: #257ca3;
+  --iceblue: #739bd0;
+  --bone: #f0f0f0;
+  --darkice: #043592;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Chakra Petch", serif;
+
+  --sb-track-color: var(--background);
+  --sb-thumb-color: var(--foreground);
+  --sb-size: 6px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 3px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+
+.font-advent {
+  font-family: "Advent Pro", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.font-viet {
+  font-family: "Playwrite VN", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.grad-iceblue {
+  background: rgb(248, 247, 243);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(248, 247, 243, 1) 0%,
+    rgba(115, 155, 208, 1) 35%,
+    rgba(188, 211, 222, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(248, 247, 243, 1) 0%,
+    rgba(115, 155, 208, 1) 35%,
+    rgba(188, 211, 222, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(248, 247, 243, 1) 0%,
+    rgba(115, 155, 208, 1) 35%,
+    rgba(188, 211, 222, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8f7f3",endColorstr="#bcd3de",GradientType=1);
 }
