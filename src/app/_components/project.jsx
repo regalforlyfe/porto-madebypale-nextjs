@@ -24,7 +24,7 @@ export function Project() {
     <div className={styles.container} id="projects">
       <div className={styles.projectContainer}>
         <div>
-          <p className="text-black">this are my project</p>
+          <p className="text-black">this are my big project</p>
         </div>
         {projects.map((project, index) => {
           return (

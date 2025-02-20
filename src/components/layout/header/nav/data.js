@@ -7,18 +7,18 @@ export const links = [
     title: "Careers",
     href: "#career",
   },
-  {
-    title: "Tech",
-    href: "/tech",
-  },
+  // {
+  //   title: "Tech",
+  //   href: "/tech",
+  // },
   {
     title: "Project",
     href: "#projects",
   },
-  {
-    title: "Contact",
-    href: "/contact",
-  },
+  // {
+  //   title: "Contact",
+  //   href: "/contact",
+  // },
 ];
 
 export const footerLinks = [

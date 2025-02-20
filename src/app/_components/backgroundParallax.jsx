@@ -18,11 +18,10 @@ export function BackgroundParallax() {
     >
       <div className="relative z-10 p-20 mix-blend-difference w-full h-full flex flex-col justify-between">
         <p className="w-[50vw] text-[2vw] self-end uppercase mix-blend-difference font-semibold">
-          Beauty and quality need the right time to be conceived and realised
-          even in a world that is in too much of a hurry.
+          “Waste no more time arguing what a good man should be. Be One.”
         </p>
         <p className="text-[5vw] uppercase mix-blend-difference">
-          Jangan lupa istirahat
+          – Marcus Aurelius
         </p>
       </div>
       <div className="fixed top-[-10vh] left-0 h-[120vh] w-full">
